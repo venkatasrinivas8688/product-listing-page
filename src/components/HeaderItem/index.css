@@ -1,0 +1,9 @@
+.header-item{
+    list-style-type: none;
+}
+.list-item-name{
+    font-family: "Roboto";
+    background-color: none;
+    padding-left:8px;
+    padding-right: 8px;
+}

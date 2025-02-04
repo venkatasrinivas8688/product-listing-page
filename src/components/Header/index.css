@@ -1,0 +1,43 @@
+.header-container{
+    margin:0px;
+    width:100%;
+}
+.left-icon{
+    height:15px;
+    width:15px;
+    margin:5px;
+}
+@media (min-width:768px){
+    .left-icon{
+        height: 25px;
+        width: 25px;
+        margin-left:10px;
+        margin-top:10px;
+    }
+}
+.right-icon{
+    height:15px;
+    width:15px;
+    margin:5px;
+}
+@media (min-width:768px){
+    .right-icon{
+    height:25px;
+    width:25px;
+    margin-top:10px;
+    }
+}
+.header-logo{
+    height:20px;
+    width:50px;
+    
+}
+@media (min-width:768px){
+    .header-logo{
+    height: 30px;
+    width:100px;
+    margin:10px;
+    margin-left:55px;
+    
+    }
+}
