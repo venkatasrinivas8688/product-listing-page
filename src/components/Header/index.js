@@ -1,6 +1,17 @@
+import { useNavigate } from 'react-router-dom';
+import Cookies from 'js-cookie'
 import './index.css'
 
-const Header=()=>(
+const Header=()=>{
+    const navigate = useNavigate();
+    const onClickLogout=()=>{
+        
+        Cookies.remove("jwt_token")
+        navigate("/login", { replace: true })
+        
+    }
+
+    return(
     <div className="header-container p-1">
         <div className="d-md-none d-flex flex-row justify-content-between ml-5 mr-5">
             <div className='d-flex flex-row'>
@@ -57,10 +68,12 @@ const Header=()=>(
                     <img src="https://res.cloudinary.com/dlwikyxnu/image/upload/v1738586622/profile_k8vqfl.svg" 
                         className="right-icon" 
                         alt=''/>
+                    <button type="button" className="btn btn-outline-primary" onClick={onClickLogout}>Logout</button>
                 </div>
             
             </div>
         </div>
     </div>
 )
+}
 export default Header
